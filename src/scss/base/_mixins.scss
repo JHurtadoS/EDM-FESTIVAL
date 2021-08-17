@@ -1,0 +1,29 @@
+@mixin MediaQueryMin800 {
+    @media (min-width: 800px) {
+        @content;
+    }
+}
+
+@mixin MediaQueryMax800 {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+
+@mixin MediaQueryMax500 {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin MediaQueryMax650 {
+    @media (max-width: 650px) {
+        @content;
+    }
+}
+
+@mixin columnas-grid($columnas, $separacion) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    grid-column-gap: $separacion;
+}

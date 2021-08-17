@@ -1,0 +1,51 @@
+.boletos {
+    padding: $separacion 0;
+    .basico p,
+    .premium p {
+        color: $blanco;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+        color: $blanco;
+    }
+    .contenedor-boletos {
+        margin-top: $separacion/2;
+        @include columnas-grid(2, $separacion);
+    }
+}
+
+.pase {
+    width: 100%;
+    border-spacing: 0;
+    thead {
+        background-color: $rosa;
+        th {
+            padding: $separacion/4;
+            color: $blanco;
+            font-weight: $delgada;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+    }
+    tbody {
+        td {
+            padding: $separacion/4;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        tr:last-of-type {
+            border: none;
+        }
+        background-color: $blanco;
+    }
+    tfoot {
+        background-color: $morado;
+        td {
+            padding: $separacion/4;
+            text-align: center;
+            font-size: 3rem;
+            color: $blanco;
+        }
+    }
+}
